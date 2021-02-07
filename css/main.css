@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+@font-face {
+  font-family: CulaR;
+  src: url(../fonts/Cula-Regular.otf);
+  }
+
+  @font-face {
+    font-family: CulaB;
+    src: url(../fonts/Cula-Bold.otf);
+    }
+
+
+
+body{
+    padding: 0;
+    margin: 0;
+    background: #eae8e4 ;
+}
+
+
+
+h4,
+h5,
+p{
+    font-family: CulaR;
+    color: #424242;
+}
+
+h3{
+    font-family: CulaB;
+    color: #424242;
+}
+
+
+
+
+h3{
+  font-size: 4em;
+}
+h1{
+  font-size: 8em;
+}
+
+
+.navbar {
+position: block;
+height: 100%;
+}
+
+.navbar a {
+  color: #d0d0d0;
+  font-size: 1.5em;
+}
+
+
+
+
+#content{
+  position: fixed;
+  top: 0px; left: 0px;
+  width: 100%; height: 100%;
+  background-color: none;
+  z-index: -2;
+}
+
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+#presentazione{
+background-image: url('../images/parresia.gif');
+background-repeat: no-repeat;
+ background-position: center;
+ transform: translate(50%,0);
+  background-size: contain;
+width: 50%; height: 100%;
+}
+
+ #intro{
+   position: absolute;
+   top: 58%; left: 50%;
+   transform: translate(-50%, 50%);
+   text-align: center;
+   opacity:0;
+ }
+
+ #link{
+   position: absolute;
+   top: 70%; left: 50%;
+   transform: translate(-50%, 50%);
+   text-align: center;
+   opacity:0;
+ }
+
+#intro.su{
+position: absolute;
+top: 40% ; left: 50%;
+transform: translate(-50%, 50%);
+text-align: center;
+opacity: 1;
+transition: 0.5s;
+}
+
+#link.su{
+position: absolute;
+top: 60% ; left: 50%;
+transform: translate(-50%, 50%);
+text-align: center;
+opacity: 1;
+transition: 0.5s;
+}
+
+#presentazione.su{
+  background-image: url('../images/parresia.gif');
+  background-repeat: no-repeat;
+   background-position: center;
+   transform: translate(50%,-14%);
+    background-size: contain;
+  width: 50%; height: 100%;
+  transition: 0.5s;
+
+}
+
+.highlightReverse {
+  background-image: linear-gradient(120deg, #f6cd7c 0%, #f6cd7c 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.1em;
+  background-position: right 50% top 100%;
+  transition: 0.20s ease-in;
+}
+.highlightReverse:hover {
+  background-size: 0% 0.1em;
+  color: black;
+}
+
+
+a,
+a:hover{
+  text-decoration: none;
+  color: #424242;
+}
+
+@media (max-width:768px){
+
+  #intro{
+    font-size: 1em;
+    top: 30% ;
+  }
+
+  #link{
+    font-size: 1em;
+
+  }
+
+}
+
+#back{
+  position: absolute;
+  transform: translate(-50%,0);
+  right: 0px;
+}
+
+
+
+
+.index{
+  margin-bottom: 0px !important;
+}
